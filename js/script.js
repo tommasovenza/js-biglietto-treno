@@ -1,3 +1,4 @@
+// impostazioni domande prompt
 var chilometri = parseInt(prompt('Quanti chilometri vuoi fare?'));
 var eta = parseInt(prompt('Inserisci la tua eta'));
 
@@ -15,17 +16,18 @@ console.log(sconto_anziani);
 
 var prezzo = prezzo_intero_biglietto
 
+// l'if
 if (eta < 18) {
     var prezzo = prezzo_intero_biglietto - sconto_minori;
-    alert(prezzo);
+    alert('Il costo del biglietto é ' + prezzo + ' grazie ad uno sconto minorenni di ' + sconto_minori + ' euro');
 }
 
 else if (eta > 65) {
     var prezzo = prezzo_intero_biglietto - sconto_anziani;
-    alert(prezzo);
+    alert('Il costo del biglietto é ' + prezzo + ' grazie ad uno sconto per anziani di ' + sconto_anziani + ' euro');
 }
 
 else {
-    alert(prezzo);
+    alert('Il costo del biglietto é ' + prezzo + ' euro');
 }
 
